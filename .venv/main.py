@@ -5,7 +5,7 @@ from matplotlib_venn import venn3
 import matplotlib.pyplot as plt
 
 data_table = pd.read_csv("variants.tsv", sep="\t");
-print(data_table)
+
 
 # Soru 1 Frequency sütunundaki eksik değerleri, o varyantın bulunduğu popülasyonın ortalama frekansı ile doldurun.
 means_of_populations_frequency = data_table.groupby('Population')['Frequency'].mean()
